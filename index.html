@@ -1309,30 +1309,8 @@ Which position are applying for?
 <p class="question_text question3">
 Enter date of birth
 <input type="text" name="_name" placeholder="DD/MM/YYYY"><br/>
-  <div style="width: 260px; margin: 20px auto; text-align: center; font-family: 'Segoe UI', sans-serif;">
-  <h3 style="color: #006400; margin-bottom: 10px;">Select Your Province</h3>
-
-  <select style="
-    width: 100%;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-    color: #333;
-    font-size: 15px;
-    font-family: 'Segoe UI', sans-serif;
-    appearance: none;
-    background-image: linear-gradient(45deg, transparent 50%, #007bff 50%), linear-gradient(135deg, #007bff 50%, transparent 50%);
-    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
-    background-size: 5px 5px, 5px 5px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  " 
-  onmouseover="this.style.borderColor='#007bff'" 
-  onmouseout="this.style.borderColor='#ccc'">
-  
-    <option value="">-- Choose Province --</option>
+  <select style="width: 260px; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; background-color: #f8f9fa; color: #333; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+  <option selected disabled>Select Your District</option>
     <option value="central">Central Province</option>
     <option value="copperbelt">Copperbelt Province</option>
     <option value="eastern">Eastern Province</option>
@@ -1344,6 +1322,7 @@ Enter date of birth
     <option value="southern">Southern Province</option>
     <option value="western">Western Province</option>
   </select>
+</select>
 <br>
 Type of educational qualification you have
 </p>
