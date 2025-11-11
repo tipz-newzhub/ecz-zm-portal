@@ -1309,137 +1309,40 @@ Which position are applying for?
 <p class="question_text question3">
 Enter date of birth
 <input type="text" name="_name" placeholder="DD/MM/YYYY"><br/>
-  <div style="width: 280px; margin: 20px auto; text-align: center; font-family: Arial, sans-serif;">
-  <h3 style="color: #006400; margin-bottom: 10px;">Select Your District (Zambia)</h3>
+  <div style="width: 260px; margin: 20px auto; text-align: center; font-family: 'Segoe UI', sans-serif;">
+  <h3 style="color: #006400; margin-bottom: 10px;">Select Province (Zambia)</h3>
 
-  <select style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; background-color: #f8f9fa; color: #333; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-    <option selected disabled>Select District</option>
-
-    <!-- Central Province -->
-    <optgroup label="Central Province">
-      <option>Chibombo</option>
-      <option>Chisamba</option>
-      <option>Kabwe</option>
-      <option>Kabwe Rural</option>
-      <option>Kapiri Mposhi</option>
-      <option>Mkushi</option>
-      <option>Serenje</option>
-      <option>Chitambo</option>
-    </optgroup>
-
-    <!-- Copperbelt Province -->
-    <optgroup label="Copperbelt Province">
-      <option>Chililabombwe</option>
-      <option>Chingola</option>
-      <option>Kalulushi</option>
-      <option>Kitwe</option>
-      <option>Luanshya</option>
-      <option>Lufwanyama</option>
-      <option>Mufulira</option>
-      <option>Ndola</option>
-      <option>Masaiti</option>
-    </optgroup>
-
-    <!-- Eastern Province -->
-    <optgroup label="Eastern Province">
-      <option>Chadiza</option>
-      <option>Chipata</option>
-      <option>Katete</option>
-      <option>Lundazi</option>
-      <option>Mambwe</option>
-      <option>Nyimba</option>
-      <option>Petauke</option>
-      <option>Sinda</option>
-      <option>Vubwi</option>
-    </optgroup>
-
-    <!-- Luapula Province -->
-    <optgroup label="Luapula Province">
-      <option>Chiengi</option>
-      <option>Kawambwa</option>
-      <option>Mansa</option>
-      <option>Milenge</option>
-      <option>Nchelenge</option>
-      <option>Samfya</option>
-      <option>Chipili</option>
-    </optgroup>
-
-    <!-- Lusaka Province -->
-    <optgroup label="Lusaka Province">
-      <option>Chilanga</option>
-      <option>Chongwe</option>
-      <option>Kafue</option>
-      <option>Luangwa</option>
-      <option>Lusaka</option>
-      <option>Rufunsa</option>
-    </optgroup>
-
-    <!-- Muchinga Province -->
-    <optgroup label="Muchinga Province">
-      <option>Chama</option>
-      <option>Chinsali</option>
-      <option>Isoka</option>
-      <option>Lavushimanda</option>
-      <option>Mpika</option>
-      <option>Nakonde</option>
-      <option>Shiwang'andu</option>
-    </optgroup>
-
-    <!-- Northern Province -->
-    <optgroup label="Northern Province">
-      <option>Chilubi</option>
-      <option>Kaputa</option>
-      <option>Kasama</option>
-      <option>Luwingu</option>
-      <option>Mbala</option>
-      <option>Mporokoso</option>
-      <option>Mpulungu</option>
-      <option>Mungwi</option>
-      <option>Lunte</option>
-    </optgroup>
-
-    <!-- North-Western Province -->
-    <optgroup label="North-Western Province">
-      <option>Chavuma</option>
-      <option>Ikelenge</option>
-      <option>Kalumbila</option>
-      <option>Kabompo</option>
-      <option>Mufumbwe</option>
-      <option>Manyinga</option>
-      <option>Solwezi</option>
-      <option>Zambezi</option>
-    </optgroup>
-
-    <!-- Southern Province -->
-    <optgroup label="Southern Province">
-      <option>Chikankata</option>
-      <option>Choma</option>
-      <option>Gwembe</option>
-      <option>Itezhi-Tezhi</option>
-      <option>Kalomo</option>
-      <option>Livingstone</option>
-      <option>Mazabuka</option>
-      <option>Monze</option>
-      <option>Namwala</option>
-      <option>Pemba</option>
-      <option>Siavonga</option>
-      <option>Sinazongwe</option>
-    </optgroup>
-
-    <!-- Western Province -->
-    <optgroup label="Western Province">
-      <option>Kalabo</option>
-      <option>Kaoma</option>
-      <option>Limulunga</option>
-      <option>Lukulu</option>
-      <option>Mitete</option>
-      <option>Mongu</option>
-      <option>Mulobezi</option>
-      <option>Senanga</option>
-      <option>Sesheke</option>
-      <option>Shangombo</option>
-      <option>Sikongo</option>
-    </optgroup>
+  <select style="
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #007bff 50%), linear-gradient(135deg, #007bff 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  " 
+  onmouseover="this.style.borderColor='#007bff'" 
+  onmouseout="this.style.borderColor='#ccc'">
+  
+    <option value="">-- Choose Province --</option>
+    <option value="central">Central Province</option>
+    <option value="copperbelt">Copperbelt Province</option>
+    <option value="eastern">Eastern Province</option>
+    <option value="luapula">Luapula Province</option>
+    <option value="lusaka">Lusaka Province</option>
+    <option value="muchinga">Muchinga Province</option>
+    <option value="northern">Northern Province</option>
+    <option value="north-western">North-Western Province</option>
+    <option value="southern">Southern Province</option>
+    <option value="western">Western Province</option>
   </select>
 </div>
 <br>
